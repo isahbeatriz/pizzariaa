@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedidos | Belly Pizzaria</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="pedidos">
+  <header>
+    <img src="imagens/logo.png" alt="Logo Belly">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="pedidos.html">Pedidos</a>
+      <a href="rodizio.html">Rodízio</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+      <a href="sobre.html">Sobre Nós</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Faça seu Pedido Online 🛒</h1>
+    <p>Preencha os campos abaixo e receba sua pizza quentinha em casa!</p>
+
+    <form>
+      <label for="nome">👤 Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="endereco">📍 Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required>
+
+      <label for="sabor">🍕 Sabor da Pizza:</label>
+      <select id="sabor" name="sabor" required>
+        <option value="">Selecione</option>
+        <option>Calabresa</option>
+        <option>Marguerita</option>
+        <option>Quatro Queijos</option>
+        <option>Frango com Catupiry</option>
+        <option>Chocolate com Morango</option>
+      </select>
+
+      <label for="borda">🌟 Borda Recheada:</label>
+      <select id="borda" name="borda">
+        <option>Não</option>
+        <option>Catupiry</option>
+        <option>Cheddar</option>
+        <option>Chocolate</option>
+      </select>
+
+      <label for="observacoes">📝 Observações:</label>
+      <textarea id="observacoes" name="observacoes" rows="4" placeholder="Ex: sem cebola, entregar no portão..."></textarea>
+
+      <button type="submit" class="botao">Enviar Pedido</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Belly Pizzaria - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
